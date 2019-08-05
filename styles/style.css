@@ -1,0 +1,116 @@
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    background: url("../images/paws.jpg") no-repeat center center fixed;
+    background-color: rgba(219, 174, 116, 0.822);;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 450px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: rgba(110, 68, 34, 0.9);
+    border: 10px solid rgba(0, 0, 0, 0.9);
+    border-radius: 4%;
+}
+
+.header-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(243, 243, 203);
+    text-shadow: 5px 3px 5px rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-search-field {
+    height: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20%;
+    background-color: rgb(243, 243, 203);
+}
+
+.header-search-submit {
+    height: 25px;
+    font-weight: bold;
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20%;
+    background-color: rgb(243, 243, 203);
+    cursor: pointer;
+}
+
+.dogs-list {
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0;
+}
+
+
+.dogs-list-item {
+    display: block;
+    max-width: 70%;
+    min-width: 450px;
+    min-height: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+    background-color: rgba(243, 243, 203, 0.7);
+    border: 7px solid rgba(0, 0, 0, 0.65);
+    border-radius: 4%;
+}
+
+.dogs-list-item .dog-image {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.65);
+    border-radius: 20%;
+}
+
+.dogs-list-item .dog-more {
+    font-size: 15px;
+    color: rgb(122, 29, 29);
+}
+
+.dogs-list-item .dog-more:visited {
+    color: rgb(117, 31, 31);
+}
+
+.dogs-list .no-result {
+    display: block;
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
